@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(img/background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: 'Kosugi Maru', sans-serif;
+
+}
+
+
+
+
+.header {
+background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23e38014' fill-opacity='0.4' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+width: 100%;
+height: 100px;
+display: flex;
+border-bottom: black inset;
+position: fixed;
+z-index: 10;
+}
+
+
+.pic-modal {
+    overflow-y: hidden;
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Full width */
+    height: 90%; /* Full height */
+    background-color:rgba(145, 77, 22, 0.8);
+
+  }
+  
+
+  .modal-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .pic-modal img { 
+    width: 300px;
+    border-radius: 10%;
+  }
+
+  #close {
+    margin-top: 10px;
+    text-decoration: none;
+   font-size: 40px;
+
+  }
+
+#curry-icon {
+    width: 100px;
+    height: auto;
+}
+.titles {
+    display: flex;
+    flex-direction: column;
+}
+#title {
+font-family: 'Kosugi Maru', sans-serif;
+width: 200px;
+margin-left: 10px;
+margin-top: 50px;
+font-size: 2em;
+}
+
+
+#title-en {
+    font-family: sans-serif;
+    width: 200px;
+    margin-left: 15px;
+    font-size: 1em;
+    color: rgb(102, 27, 27)
+    }
+
+.nav-links {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 100px;
+    margin-right: 0;
+    margin-top: 35px;
+    width: 400px;
+    height: auto;
+    color:rgb(153, 42, 42);
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(83, 69, 69);
+    
+}
+
+a:hover {
+    filter: brightness(20%)
+}
+
+a
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-left: 200px;
+    color: rgb(182, 56, 56)
+    
+    
+}
+.phone {
+    display: flex;
+    width: auto;
+    margin: 0;
+}
+
+.phone img {
+  width: 10%;
+  margin: 0;
+    
+}
+
+.phone h2 {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.email {
+    display: flex;
+    width:auto;
+    margin: 0 auto;
+}
+
+.email img {
+  width: 10%;
+  margin: 0;
+    
+}
+
+.email h2 {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+/* Main */
+
+
+.wrapper {
+    width: 100%;
+   height: auto;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow:inset 0 0 0 2000px rgba(219, 62, 154, 0.4);
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    border-radius: 20%;
+    color:rgb(22, 19, 19)
+}
+   
+
+#top {
+    margin-top: 110px;
+    background-color: rgba(152, 155, 151, 0.2);
+    width: 570px;
+    padding: 40px;
+    height:80vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: rgb(102, 27, 27)
+
+
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#about {
+    margin-top: 100px;
+    background-color: rgba(152, 155, 151, 0.2);
+    width: 570px;
+    height:80vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#products {
+    
+        
+        background-color: rgba(152, 155, 151, 0.2);
+        width: 570px;
+       
+        height:80vh;
+        padding: 40px;
+}
+
+#products img {
+    width: 30%;
+}
+
+#curries {
+  
+    background-color: rgba(152, 155, 151, 0.2);
+    width: 570px;
+   display: flex;
+   flex-direction: column;
+    height:80vh;
+    padding: 40px;
+}
+
+#curries img {
+    width: 200px;
+    padding:20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#curries img:hover {
+    width: 210px;
+    
+}
